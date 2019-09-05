@@ -10,8 +10,6 @@ import java.io.IOException;
 public class CurrencyConverterApplication {
 
 	public static void main(String[] args) throws IOException {
-		//ParserCurrency.getCurrenciesRate("https://www.banki.ru/products/currency/");
-
 		SpringApplication.run(CurrencyConverterApplication.class, args);
 
 
