@@ -1,4 +1,4 @@
-package com.c.currency.onverter;
+package com.currency.converter;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

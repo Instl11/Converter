@@ -1,4 +1,4 @@
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Exchange of currency</title>
@@ -7,12 +7,12 @@
 
 <div>
     <h3>Выберите валюту для обмена</h3>
-    <form method="post">
+    <form method="post" >
         <div>
-            <select name="currency">
-                <option value="{{dollar}}">Доллар</option>
-                <option value="{{euro}}">Евро</option>
-                <option value="{{crown}}">Фунты стерлингов</option>
+            <select th:field="${wrapper.currency}">
+                <option th:value="${dollar}">Доллар</option>
+                <option th:value="${euro}">Евро</option>
+                <option th:value="${crown}">Фунты стерлингов</option>
             </select>
         </div>
         <div>
