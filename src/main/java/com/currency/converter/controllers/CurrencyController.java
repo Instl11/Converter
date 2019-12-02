@@ -40,7 +40,7 @@ public class CurrencyController {
     }
 
     @PostMapping
-    public String exchange(SelectedCurrency c, int amount, Model model)  {
+    public String exchange(SelectedCurrency c, int amount, Model model) {
 
         MappingJackson2HttpMessageConverter converter =
                 new MappingJackson2HttpMessageConverter();
@@ -56,7 +56,7 @@ public class CurrencyController {
         Currency currency = currencyMap.get(cur);
 
         double rate = currency.getValue();
-        double result = Math.round(amount/rate*100)/100.0;
+        double result = Math.round(amount / rate * 100) / 100.0;
         model.addAttribute("result", result);
 
         return "result";

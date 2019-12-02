@@ -16,7 +16,6 @@ public class CurrencyConverterApplication {
 
     @Bean
     public RestTemplate restTemplate() {
-
 		return new RestTemplate();
     }
 
